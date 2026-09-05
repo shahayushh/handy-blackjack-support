@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>handy-blackjack Support</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #5f5f5f;
+    --accent: #0a66c2;
+    --border: #e2e2e2;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121212;
+      --fg: #ededed;
+      --muted: #aaaaaa;
+      --accent: #6db3ff;
+      --border: #2a2a2a;
+    }
+  }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 4rem 1.5rem;
+  }
+  main {
+    max-width: 32rem;
+    width: 100%;
+  }
+  h1 {
+    font-size: 1.75rem;
+    margin-bottom: 0.25rem;
+  }
+  p.tagline {
+    color: var(--muted);
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
+  .card {
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1.25rem;
+  }
+  .card h2 {
+    font-size: 1.1rem;
+    margin-top: 0;
+  }
+  .card p {
+    color: var(--muted);
+    line-height: 1.5;
+  }
+  a.button {
+    display: inline-block;
+    background: var(--accent);
+    color: #fff;
+    text-decoration: none;
+    padding: 0.6rem 1.1rem;
+    border-radius: 8px;
+    font-weight: 600;
+  }
+  footer {
+    margin-top: 2rem;
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>handy-blackjack Support</h1>
+  <p class="tagline">A watchOS blackjack card-counting and basic strategy trainer. No betting, no bankroll — practice only.</p>
+
+  <div class="card">
+    <h2>Found a bug or have a question?</h2>
+    <p>Open an issue on GitHub and it'll be looked at directly. Please include your watchOS version and Apple Watch model if reporting a bug.</p>
+    <a class="button" href="https://github.com/shahayushh/handy-blackjack-support/issues/new" target="_blank" rel="noopener">Open an issue</a>
+  </div>
+
+  <div class="card">
+    <h2>Feature requests</h2>
+    <p>Same place — open an issue describing what you'd like to see.</p>
+  </div>
+
+  <footer>handy-blackjack &middot; support page</footer>
+</main>
+</body>
+</html>
